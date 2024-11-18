@@ -16,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
         title: Text('MyNotes'),
       ),
       body: notes.isEmpty
-          ? Center(child: Text("Notes on following page."))
+          ? Center(child: Text("Notes saved will be displayed here"))
           : ListView.builder(
         itemCount: notes.length,
         itemBuilder: (context, index) {
